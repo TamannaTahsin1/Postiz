@@ -10,7 +10,6 @@ const Home = () => {
         <h4 className="tet-lg text-slate-500">
           Modify the structure as you want
         </h4>
-        <h4 className="tet-lg text-slate-500"> ~ shiyam sarker ~</h4>
       </div>
     </div>
   );
