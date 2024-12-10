@@ -3,7 +3,7 @@ import { priceDetails, pricing } from "../../../lib/Data/BufferPricingData";
 
 const BufferPricing = () => {
   return (
-    <div className="bg-secondary w-full space-y-3 rounded-xl p-14 ">
+    <div className="bg-secondary w-full space-y-3 rounded-xl p-10 lg:p-14 md:p-7 ">
       <h1 className="mb-8 text-2xl font-bold">Buffer Pricing</h1>
       {/* pricing features */}
       <div className="space-y-3 ">
@@ -24,7 +24,7 @@ const BufferPricing = () => {
         {priceDetails.map((item) => (
           <div
             key={item.id}
-            className="flex items-center justify-between rounded-xl  bg-[#242323] p-5"
+            className="flex flex-col items-start justify-start rounded-xl bg-[#242323] p-5 md:flex-row  md:items-center md:justify-between"
           >
             <div>
               <h1 className="text-lg">{item.package}</h1>
@@ -33,7 +33,7 @@ const BufferPricing = () => {
                 <span className="-mt-5 text-base font-normal">/ mo</span>
               </h2>
             </div>
-            <div className="w-[32%] space-y-1 text-balance text-sm text-gray-300">
+            <div className="space-y-1 text-balance text-sm text-gray-300 md:w-[32%]">
               <p className="">Social Sets: {item.socialSets}</p>
               <p className="">Users: {item.users}</p>
             </div>

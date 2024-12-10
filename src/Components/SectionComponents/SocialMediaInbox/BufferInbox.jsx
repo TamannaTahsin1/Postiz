@@ -1,11 +1,11 @@
-import { BufferSchedulingData } from "../../../lib/Data/BufferSchedulingData";
+import { BufferInboxData } from "../../../lib/Data/BufferInboxData";
 
-const BufferScheduling = () => {
+const BufferInbox = () => {
   return (
     <div className="bg-secondary w-full space-y-6 rounded-xl p-14">
-      <h1 className="text-2xl font-bold">Buffer - Scheduling & Publishing</h1>
+      <h1 className="text-2xl font-bold">Buffer - Social Media Inbox</h1>
       <div>
-        {BufferSchedulingData?.map((item, idx) => (
+        {BufferInboxData?.map((item, idx) => (
           <div key={idx} className="mb-4">
             <h1 className="mb-2 text-sm font-medium">{item.title}</h1>
             <div className="space-y-2">
@@ -28,4 +28,4 @@ const BufferScheduling = () => {
   );
 };
 
-export default BufferScheduling;
+export default BufferInbox;

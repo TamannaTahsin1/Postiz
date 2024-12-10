@@ -7,7 +7,7 @@ const Pricing = () => {
   return (
     <Container>
       <Title text="Pricing & Plans" />
-      <div className="mx-20 flex items-start justify-center gap-5 py-10">
+      <div className="flex flex-col items-start justify-center gap-5 py-10 md:mx-20 md:flex-row">
         <PostizPricing />
         <BufferPricing />
       </div>

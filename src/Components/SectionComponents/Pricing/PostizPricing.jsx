@@ -7,7 +7,7 @@ import {
 
 const PostizPricing = () => {
   return (
-    <div className="bg-secondary w-full space-y-6 rounded-xl p-14">
+    <div className="bg-secondary w-full space-y-6 rounded-xl p-10 md:p-7 lg:p-14">
       <h1 className="mb-8 text-2xl font-bold">Postiz Pricing</h1>
       {/* pricing features */}
       <div className="space-y-3 ">
@@ -28,16 +28,16 @@ const PostizPricing = () => {
         {priceDetails.map((item) => (
           <div
             key={item.id}
-            className="flex items-center justify-between rounded-xl  bg-[#242323] p-5"
+            className="flex flex-col  items-start justify-start rounded-xl bg-[#242323] p-5 md:flex-row  md:items-center md:justify-between"
           >
             <div className="space-y-2">
               <h1 className="text-lg">{item.package}</h1>
               <h2 className="text-3xl font-semibold">
-                ${item.price}{" "}
+                ${item.price}
                 <span className="-mt-5 text-base font-normal">/ mo</span>
               </h2>
             </div>
-            <div className=" w-[32%] space-y-1 text-balance text-sm text-gray-300">
+            <div className=" space-y-1 text-balance text-sm text-gray-300 md:w-[32%]">
               <p className="">Social Sets: {item.socialSets}</p>
               <p className="">Users: {item.users}</p>
             </div>
@@ -50,13 +50,13 @@ const PostizPricing = () => {
         <div className="grid grid-cols-1 gap-2 ">
           {services.map((item) => (
             <div
-              key={item.package} // Ensure unique key, here using `package`
-              className={`flex items-center justify-between rounded-xl p-5 ${
+              key={item.package}
+              className={`flex flex-col items-start justify-start rounded-xl p-5 md:flex-row md:items-center md:justify-between ${
                 item.package === "Self service installation"
                   ? "bg-gradient-to-r from-[#45007C] to-[#280033]"
                   : item.package === "Enterprise"
                     ? "bg-gradient-to-r from-[#6B007C] to-[#280033]"
-                    : "bg-[#242323]" // Default background
+                    : "bg-[#242323]"
               }`}
             >
               <div className="space-y-2">
@@ -66,7 +66,7 @@ const PostizPricing = () => {
                   <span className="-mt-5 text-base font-normal">/ mo</span>
                 </h2>
               </div>
-              <div className="w-[32%] space-y-1 text-balance text-sm text-gray-300">
+              <div className="space-y-1 text-balance text-sm text-gray-300 md:w-[32%]">
                 <p className="">Social Sets: {item.socialSets}</p>
                 <p className="">Users: {item.users}</p>
               </div>

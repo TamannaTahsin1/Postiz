@@ -1,15 +1,15 @@
-import { BufferSchedulingData } from "../../../lib/Data/BufferSchedulingData";
+import { BufferAnalyticsData } from "../../../lib/Data/BufferAnalyticsData";
 
-const BufferScheduling = () => {
+const BufferAnalytics = () => {
   return (
     <div className="bg-secondary w-full space-y-6 rounded-xl p-14">
-      <h1 className="text-2xl font-bold">Buffer - Scheduling & Publishing</h1>
+      <h1 className="text-2xl font-bold">Buffer - Analytics & Reporting</h1>
       <div>
-        {BufferSchedulingData?.map((item, idx) => (
+        {BufferAnalyticsData.map((item, idx) => (
           <div key={idx} className="mb-4">
             <h1 className="mb-2 text-sm font-medium">{item.title}</h1>
             <div className="space-y-2">
-              {item.postizData?.map((data, dataIdx) => (
+              {item.postizData.map((data, dataIdx) => (
                 <div
                   key={dataIdx}
                   className="flex items-center gap-2 text-gray-400"
@@ -17,7 +17,7 @@ const BufferScheduling = () => {
                   <div className="flex size-6 items-center justify-center rounded-full bg-gray-800">
                     {data.icon}
                   </div>
-                  <p className="text-sm">{data.subTitle}</p>
+                  <p className="text-wrap text-sm">{data.subTitle}</p>
                 </div>
               ))}
             </div>
@@ -28,4 +28,4 @@ const BufferScheduling = () => {
   );
 };
 
-export default BufferScheduling;
+export default BufferAnalytics;
