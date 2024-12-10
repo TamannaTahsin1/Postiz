@@ -5,7 +5,7 @@ import BannerCard from "./BannerCard";
 const Banner = () => {
   return (
     <Container>
-      <div className="h-[90vh] space-y-5 p-20 text-center">
+      <div className="md:h-[90vh] space-y-5 p-20 text-center">
         <h1 className="mx-auto  text-xl font-bold md:text-3xl lg:max-w-[800px] lg:text-6xl">
           Postiz and Buffer comparison
         </h1>
