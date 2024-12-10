@@ -18,14 +18,14 @@ html {
 
 * {
   scrollbar-width: 10px;
-  scrollbar-color: #eb0029;
+  scrollbar-color: #5608D5;
 }
 /* chrome, edge, and Safari */
 *::-webkit-scrollbar {
   width: 6px;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #eb0029;
+  background-color: #5608D5;
   border-radius: 0%;
 }
 .custom-scrollbar-a {

@@ -27,7 +27,7 @@ const PlatformCard = () => {
             className={`rounded-lg p-10 ${
               card.title === "Postiz"
                 ? "bg-gradient-to-r from-[#24005E] to-[#5608D5] "
-                : "bg-[#1A1919]"
+                : "bg-secondary"
             }`}
           >
             <img
@@ -38,7 +38,6 @@ const PlatformCard = () => {
             <p className="mt-2 text-gray-300">{card.description}</p>
           </div>
         ))}
-        {/* VS Element */}
         <div className="absolute left-1/2 top-1/2 flex size-10 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-xl bg-black font-bold text-white shadow-lg">
           VS
         </div>

@@ -1,11 +1,15 @@
 import Banner from "../Components/SectionComponents/Banner/Banner";
 import PlatformComparison from "../Components/SectionComponents/PlatformComparison/PlatformComparison";
+import Pricing from "../Components/SectionComponents/Pricing/Pricing";
+import SocialMediaScheduling from "../Components/SectionComponents/SocialMediaScheduling/SocialMediaScheduling";
 
 const Home = () => {
   return (
-    <div className="bg-black space-y-20">
+    <div className="space-y-20 bg-black">
       <Banner />
       <PlatformComparison />
+      <Pricing />
+      <SocialMediaScheduling />
     </div>
   );
 };

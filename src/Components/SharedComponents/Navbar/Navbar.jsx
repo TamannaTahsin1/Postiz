@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-50 text-primary shadow-sm transition-colors duration-300 ">
+    <div className="sticky top-0 z-50 text-primary bg-black shadow-sm transition-colors duration-300 ">
       <Container>
         <div className="mx-auto flex  items-center gap-6 py-6 xl:gap-10">
           {/* Logo */}
