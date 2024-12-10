@@ -12,12 +12,7 @@ const Navbar = () => {
       id: 2,
       name: "Providers",
       link: "/courses",
-      subRoute: [
-        "All Courses",
-        "Spoken English",
-        "Data Entry",
-   
-      ],
+      subRoute: ["All Courses", "Spoken English", "Data Entry"],
     },
     { id: 3, name: "Blog", link: "/about" },
     { id: 4, name: "Pricing", link: "/about" },
@@ -68,7 +63,7 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div className="hidden gap-4 lg:flex">
-            <Button className="border-default bg-default hover:border-default hover:bg-default rounded-full text-white hover:text-white ">
+            <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-white ">
               Log in
             </Button>
 
@@ -97,7 +92,7 @@ const Navbar = () => {
               </div>
             ))}
             <div className="mt-4 flex flex-col gap-2">
-              <Button className="border-default bg-default hover:border-default hover:bg-default rounded-full text-white hover:text-white ">
+              <Button className="border-default  hover:border-default hover:bg-default rounded-full text-white hover:text-white ">
                 Log in
               </Button>
 
