@@ -30,14 +30,14 @@ const TeamsApprovals = () => {
   return (
     <Container>
       <div className="space-y-10  md:mx-20">
-        <Title text="Teams & Approvals" />
+        <Title className="text-2xl md:text-3xl" text="Teams & Approvals" />
         <div className="flex flex-col justify-between gap-5  md:flex-row">
-          {data.map((item) => (
+          {data.map((item,idx) => (
             <div
-              key={item.title}
-              className="w-full space-y-5 rounded-xl  bg-secondary p-14 "
+              key={idx}
+              className="w-full space-y-5 rounded-xl  bg-secondary p-7 md:p-14 "
             >
-              <h1 className="text-2xl font-bold">{item.title}</h1>
+              <h1 className="text-lg md:text-2xl font-medium md:font-bold">{item.title}</h1>
               <div className="space-y-3">
                 {item.features.map((feature) => (
                   <div

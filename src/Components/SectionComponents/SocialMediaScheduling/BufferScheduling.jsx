@@ -2,8 +2,8 @@ import { BufferSchedulingData } from "../../../lib/Data/BufferSchedulingData";
 
 const BufferScheduling = () => {
   return (
-    <div className="bg-secondary w-full space-y-6 rounded-xl p-14">
-      <h1 className="text-2xl font-bold">Buffer - Scheduling & Publishing</h1>
+    <div className="bg-secondary w-full space-y-6 rounded-xl p-7 md:p-14">
+      <h1 className="text-lg md:text-2xl font-medium md:font-bold">Buffer - Scheduling & Publishing</h1>
       <div>
         {BufferSchedulingData?.map((item, idx) => (
           <div key={idx} className="mb-4">

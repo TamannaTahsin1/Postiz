@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="relative z-20 bg-black px-10 pt-14">
         <div className=" grid  gap-3 space-y-8 text-center md:grid-cols-2 md:text-start lg:grid-cols-4">
           <div className="space-y-4 md:pt-7">
-           <div className="ml-28 block md:mx-0">
-           <img src={logo}  className="mx-auto block md:mx-0" alt="" />
-           </div>
+            <div className="ml-20 block md:mx-0">
+              <img src={logo} className="mx-auto block md:mx-0" alt="" />
+            </div>
             <p className="text-sm text-gray-400">
               Open-source social media scheduling tool
             </p>

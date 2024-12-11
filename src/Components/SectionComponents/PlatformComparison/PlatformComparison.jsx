@@ -5,7 +5,7 @@ import PlatformCard from "./PlatformCard";
 const PlatformComparison = () => {
   return (
     <Container>
-      <Title text="Platform Comparison" />
+      <Title className="text-2xl md:text-3xl" text="Platform Comparison" />
       <div className="py-10">
         <PlatformCard />
       </div>

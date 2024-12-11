@@ -7,8 +7,11 @@ const SocialMediaScheduling = () => {
   return (
     <div>
       <Container>
-        <Title text="Social Media Scheduling & Publishing" />
-        <div className="md:mx-20 flex flex-col items-start  justify-center gap-5 py-10 md:flex-row">
+        <Title
+          className="text-2xl md:text-3xl"
+          text="Social Media Scheduling & Publishing"
+        />
+        <div className="flex flex-col items-start justify-center  gap-5 py-10 md:mx-20 md:flex-row">
           <PostizScheduling />
           <BufferScheduling />
         </div>

@@ -7,7 +7,10 @@ const SocialMediaAnalytics = () => {
   return (
     <div>
       <Container>
-        <Title text="Social Media Analytics & Reporting" />
+        <Title
+          className="text-2xl md:text-3xl"
+          text="Social Media Analytics & Reporting"
+        />
         <div className="flex flex-col items-start justify-center  gap-5 py-10 md:mx-20 md:flex-row">
           <PostizAnalytics />
           <BufferAnalytics />

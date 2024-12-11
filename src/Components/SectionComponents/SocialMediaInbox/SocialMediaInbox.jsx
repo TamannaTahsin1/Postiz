@@ -6,7 +6,7 @@ import PostizInbox from "./PostizInbox";
 const SocialMediaInbox = () => {
   return (
     <Container>
-      <Title text="Social Media Inbox" />
+      <Title className="text-2xl md:text-3xl" text="Social Media Inbox" />
       <div className="flex flex-col items-start justify-center  gap-5 py-10 md:mx-20 md:flex-row">
         <PostizInbox />
         <BufferInbox />

@@ -1,25 +1,40 @@
 import Button from "../../SharedComponents/Button/Button";
 import Container from "../../SharedComponents/Container/Container";
 import BannerCard from "./BannerCard";
-
+import line from "../../../assets/banner/line2.svg";
+import tornedo from "../../../assets/banner/tonedo.svg";
+import highlight from "../../../assets/banner/highlight.svg";
 const Banner = () => {
   return (
-    <Container>
-      <div className=" space-y-5 p-20 text-center">
-        <h1 className="mx-auto  text-xl font-bold md:text-3xl lg:max-w-[800px] lg:text-6xl">
-          Postiz and Buffer comparison
-        </h1>
-        <p className="mx-auto text-balance text-xs lg:max-w-lg">{`Postiz's superior scheduling flow, competitor tracking, and client management make it the best Buffer alternative.`}</p>
-        <div className="mt-4 flex flex-col items-center justify-center gap-2">
-          <Button className="w-[20%] rounded-full border-[1px] border-gray-300 bg-white ">
-            {`Get Started >>`}
-          </Button>
-        </div>
-        <div className="hidden md:block lg:pt-16">
-          <BannerCard />
-        </div>
+    <div>
+      <div className="relative">
+        <img src={tornedo} className="absolute w-12 md:w-44" alt="" />
+        <img src={highlight} className="absolute  w-10 md:w-28 right-0" alt="" />
       </div>
-    </Container>
+      <Container>
+        <div className=" space-y-5 py-5 text-center lg:p-20">
+          <div className="space-y-2">
+            <h1 className="mx-auto text-balance text-3xl font-bold lg:max-w-[800px] lg:text-6xl">
+              Postiz and Buffer comparison
+            </h1>
+            <img
+              src={line}
+              className="mx-auto w-[200px] lg:flex lg:justify-end"
+              alt=""
+            />
+            <p className="mx-auto text-balance text-xs lg:max-w-lg">{`Postiz's superior scheduling flow, competitor tracking, and client management make it the best Buffer alternative.`}</p>
+          </div>
+          <div className="mt-4 flex flex-col items-center justify-center gap-2">
+            <Button className="rounded-full border-[1px] border-gray-300 bg-white md:w-[20%] ">
+              {`Get Started >>`}
+            </Button>
+          </div>
+          <div className="pt-8 lg:pt-16">
+            <BannerCard />
+          </div>
+        </div>
+      </Container>
+    </div>
   );
 };
 

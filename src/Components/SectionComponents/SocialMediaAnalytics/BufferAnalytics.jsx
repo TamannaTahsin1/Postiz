@@ -2,8 +2,10 @@ import { BufferAnalyticsData } from "../../../lib/Data/BufferAnalyticsData";
 
 const BufferAnalytics = () => {
   return (
-    <div className="bg-secondary w-full space-y-6 rounded-xl p-14">
-      <h1 className="text-2xl font-bold">Buffer - Analytics & Reporting</h1>
+    <div className="w-full space-y-6 rounded-xl bg-secondary p-7 md:p-14">
+      <h1 className="text-lg font-medium md:text-2xl md:font-bold">
+        Buffer - Analytics & Reporting
+      </h1>
       <div>
         {BufferAnalyticsData.map((item, idx) => (
           <div key={idx} className="mb-4">

@@ -7,20 +7,24 @@ const GetStarted = () => {
   return (
     <div className="rounded-xl bg-secondary">
       <Container>
-        <div className="space-y-5 px-5 lg:py-24 text-center ">
+        <div className="space-y-5 px-5 text-center lg:py-24 ">
           <Title
-            className={"text-5xl font-bold"}
+            className={"text-3xl font-bold md:text-5xl"}
             text={"Ready to get started?"}
           />
-          <p className="mx-auto max-w-[400px]">
+          <p className="mx-auto max-w-[400px] text-sm text-gray-400 md:text-base">
             Elevate your social media planning and achieve new heights of
             efficiency and effectiveness with Postiz.
           </p>
           <div className="flex justify-center">
-            <Button>{`Get Started >>`}</Button>
+            <Button className={"rounded-full"}>{`Get Started >>`}</Button>
           </div>
           <div className="relative pt-32 lg:pt-64">
-            <img src={postizImg} className="absolute top-8 lg:top-1 mx-auto md:left-0 md:right-0" alt="" />
+            <img
+              src={postizImg}
+              className="absolute top-8 mx-auto md:left-0 md:right-0 lg:top-1"
+              alt=""
+            />
           </div>
         </div>
       </Container>

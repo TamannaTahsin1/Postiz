@@ -1,23 +1,24 @@
 import bannerImage from "../../../assets/banner/bannerImg.png";
 import Button from "../../SharedComponents/Button/Button";
-
+import circle from '../../../assets/banner/circle.svg';
 const BannerCard = () => {
   return (
-    <div className="relative  flex-col items-center justify-between rounded-2xl bg-gradient-to-r from-[#7c3aed] via-[#37CEFF] to-[#ec4899] p-10 md:flex md:flex-row lg:h-[380px]">
-      <div className="space-y-5 text-start">
-        <p className="text-lg font-semibold">One-stop platform</p>
-        <h1 className="max-w-[750px] text-5xl font-bold ">
+    <div className="relative  flex-col items-center justify-between rounded-2xl bg-gradient-to-r from-[#7c3aed] via-[#37CEFF] to-[#ec4899] p-5 md:flex md:flex-row md:p-10 lg:h-[380px]">
+      <div className="relative space-y-5 text-start">
+        <p className="text-base font-semibold md:text-lg">One-stop platform</p>
+        <h1 className="max-w-[750px] text-2xl font-bold md:text-5xl ">
           Postiz is an open-source tool for social media scheduling
         </h1>
-        <p className="max-w-lg ">
+        <img src={circle} className="w-24 md:w-40 absolute top-4 -left-4" alt="" />
+        <p className="max-w-lg text-sm md:text-base">
           Provides tools to manage social media, build an audience, generate
           leads, and grow your business.
         </p>
-        <Button className="w-[30%] rounded-full border-[1px] border-gray-300 bg-white ">
+        <Button className="rounded-full border-[1px] border-gray-300 bg-white md:w-[30%] ">
           {`Get Started >>`}
         </Button>
       </div>
-      <div>
+      <div className="hidden md:block">
         <img
           src={bannerImage}
           alt=""
