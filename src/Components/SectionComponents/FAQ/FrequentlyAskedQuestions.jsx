@@ -6,13 +6,13 @@ import Accordion from "./Accordion";
 const FrequentlyAskedQuestions = () => {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-20">
+      <div className="flex flex-col items-center justify-center gap-20 md:mx-20 md:flex-row">
         <div className="space-y-4">
           <Title
-            className={"max-w-[150px] text-start"}
+            className={"text-center md:max-w-[150px] md:text-start"}
             text="Frequently asked questions"
           />
-          <img src={doodle} className="w-[150px]" alt="" />
+          <img src={doodle} className="mx-auto w-[150px]" alt="" />
         </div>
         <Accordion />
       </div>

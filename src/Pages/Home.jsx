@@ -1,4 +1,5 @@
 import Banner from "../Components/SectionComponents/Banner/Banner";
+import ChoosePostiz from "../Components/SectionComponents/ChoosePostiz/ChoosePostiz";
 import CompareAlternatives from "../Components/SectionComponents/CompareAlternatives/CompareAlternatives";
 import FrequentlyAskedQuestions from "../Components/SectionComponents/FAQ/FrequentlyAskedQuestions";
 import GetStarted from "../Components/SectionComponents/GetStarted/GetStarted";
@@ -22,8 +23,9 @@ const Home = () => {
       <SocialMediaInbox />
       <Summary />
       <CompareAlternatives />
-      <GetStarted />
+      <ChoosePostiz />
       <FrequentlyAskedQuestions />
+      <GetStarted />
     </div>
   );
 };
