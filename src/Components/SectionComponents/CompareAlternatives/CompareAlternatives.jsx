@@ -35,13 +35,13 @@ const CompareAlternatives = () => {
 
   return (
     <Container>
-      <div className="space-y-10">
+      <div className="space-y-10  md:mx-20">
         <Title text="Compare Alternatives" />
         <div className="flex flex-col justify-between gap-5  md:flex-row">
           {data.map((item, idx) => (
             <div
               key={idx}
-              className="w-full space-y-5 rounded-xl bg-secondary p-14 py-10"
+              className="w-full space-y-5 rounded-xl bg-secondary p-14 "
             >
               <h1 className="text-2xl font-bold">{item.title}</h1>
               <div className="space-y-2">
