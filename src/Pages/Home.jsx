@@ -1,4 +1,5 @@
 import Banner from "../Components/SectionComponents/Banner/Banner";
+import CompareAlternatives from "../Components/SectionComponents/CompareAlternatives/CompareAlternatives";
 import GetStarted from "../Components/SectionComponents/GetStarted/GetStarted";
 import PlatformComparison from "../Components/SectionComponents/PlatformComparison/PlatformComparison";
 import Pricing from "../Components/SectionComponents/Pricing/Pricing";
@@ -17,6 +18,7 @@ const Home = () => {
       <SocialMediaAnalytics />
       <SocialMediaInbox />
       <Summary />
+      <CompareAlternatives />
       <GetStarted />
     </div>
   );
