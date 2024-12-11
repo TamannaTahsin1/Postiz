@@ -4,23 +4,24 @@ import Dropdown from "./Dropdown";
 import Container from "../Container/Container";
 import logo from "../../../assets/Logo/logo.png";
 import { useState } from "react";
+import { IoIosClose, IoIosMenu } from "react-icons/io";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navMenu = [
-    { id: 1, name: "Features", link: "/" },
+    { id: 1, name: "Features" },
     {
       id: 2,
       name: "Providers",
       link: "/courses",
       subRoute: ["All Courses", "Spoken English", "Data Entry"],
     },
-    { id: 3, name: "Blog", link: "/about" },
-    { id: 4, name: "Pricing", link: "/about" },
-    { id: 5, name: "FAQ", link: "/about" },
+    { id: 3, name: "Blog" },
+    { id: 4, name: "Pricing" },
+    { id: 5, name: "FAQ" },
   ];
 
   return (
-    <div className="sticky top-0 z-50 text-primary bg-black shadow-sm transition-colors duration-300 ">
+    <div className="sticky top-0 z-50 bg-black text-primary shadow-sm transition-colors duration-300 ">
       <Container>
         <div className="mx-auto flex  items-center gap-6 py-6 xl:gap-10">
           {/* Logo */}
@@ -51,7 +52,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          {/* <div className="lg:hidden">
+          <div className="lg:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? (
                 <IoIosClose className="text-3xl text-gray-700 dark:text-gray-300" />
@@ -59,11 +60,11 @@ const Navbar = () => {
                 <IoIosMenu className="text-3xl text-gray-700 dark:text-gray-300" />
               )}
             </button>
-          </div> */}
+          </div>
 
           {/* Buttons */}
           <div className="hidden gap-4 lg:flex">
-            <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-white ">
+            <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
               Log in
             </Button>
 
@@ -92,7 +93,7 @@ const Navbar = () => {
               </div>
             ))}
             <div className="mt-4 flex flex-col gap-2">
-              <Button className="border-default  hover:border-default hover:bg-default rounded-full text-white hover:text-white ">
+              <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
                 Log in
               </Button>
 

@@ -21,13 +21,13 @@ const Dropdown = ({ navItem }) => {
     <div className="relative z-[999]" ref={dropdownRef}>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="group flex cursor-pointer items-center gap-2 p-2 text-primary duration-300 hover:text-primary "
+        className="group flex cursor-pointer items-center gap-2  text-slate-500 duration-300 hover:text-primary md:text-white "
       >
         <div className="relative flex flex-col gap-[2px]">
           <h1> {navItem?.name}</h1>
         </div>
         <svg
-          className={`${isOpen ? "rotate-180" : "rotate-0"} group stroke-white duration-200  group-hover:stroke-primary `}
+          className={`${isOpen ? "rotate-180" : "rotate-0"} group stroke-slate-500 duration-200 group-hover:stroke-primary  md:stroke-white `}
           width={18}
           viewBox="0 0 24 24"
           fill="none"
@@ -43,7 +43,7 @@ const Dropdown = ({ navItem }) => {
       </div>
 
       <div
-        className={`absolute left-1/2 top-full -mt-2 h-60  w-full max-w-[250px] -translate-x-1/2 transform overflow-y-auto rounded-lg bg-white shadow-md transition-all duration-300 ${
+        className={`absolute left-1/2 top-full -mt-2 h-60  w-full max-w-[250px] -translate-x-1/2 transform overflow-y-auto rounded-lg bg-secondary shadow-md transition-all duration-300 ${
           isOpen
             ? "visible scale-100 opacity-100"
             : "invisible scale-95 opacity-0"
@@ -53,7 +53,7 @@ const Dropdown = ({ navItem }) => {
           <div
             onClick={() => setIsOpen(false)}
             key={idx}
-            className="flex h-[60px] items-center px-4 font-medium text-slate-600 duration-300 hover:bg-primary/10 hover:text-black"
+            className="flex h-[60px] items-center px-4 font-medium text-white  duration-300 hover:bg-primary/10 hover:text-black"
           >
             <h1 className="text-sm">{service}</h1>
           </div>
