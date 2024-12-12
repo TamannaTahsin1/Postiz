@@ -9,7 +9,11 @@ const Banner = () => {
     <div>
       <div className="relative">
         <img src={tornedo} className="absolute w-12 md:w-44" alt="" />
-        <img src={highlight} className="absolute  w-10 md:w-28 right-0" alt="" />
+        <img
+          src={highlight}
+          className="absolute  right-0 w-10 md:w-28"
+          alt=""
+        />
       </div>
       <Container>
         <div className=" space-y-5 py-5 text-center lg:p-20">
@@ -22,7 +26,7 @@ const Banner = () => {
               className="mx-auto w-[200px] lg:flex lg:justify-end"
               alt=""
             />
-            <p className="mx-auto text-balance text-xs lg:max-w-lg">{`Postiz's superior scheduling flow, competitor tracking, and client management make it the best Buffer alternative.`}</p>
+            <p className="mx-auto text-balance text-xs md:text-sm lg:max-w-lg">{`Postiz's superior scheduling flow, competitor tracking, and client management make it the best Buffer alternative.`}</p>
           </div>
           <div className="mt-4 flex flex-col items-center justify-center gap-2">
             <Button className="rounded-full border-[1px] border-gray-300 bg-white md:w-[20%] ">

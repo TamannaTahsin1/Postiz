@@ -5,6 +5,7 @@ import Container from "../Container/Container";
 import logo from "../../../assets/Logo/logo.png";
 import { useState } from "react";
 import { IoIosClose, IoIosMenu } from "react-icons/io";
+import DropdownSm from "./DropdownSm";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,17 +33,14 @@ const Navbar = () => {
           </div>
 
           {/* Menu for large devices */}
-          <div className="hidden flex-1 justify-center items-center lg:flex">
+          <div className="hidden flex-1 items-center justify-center lg:flex">
             <div className="flex items-center gap-10">
               {navMenu.map((menu) => (
                 <div key={menu.id}>
                   {menu.subRoute ? (
                     <Dropdown navItem={menu} />
                   ) : (
-                    <Link
-                      className="text-primary duration-300"
-                      to={menu.link}
-                    >
+                    <Link className="text-primary duration-300" to={menu.link}>
                       <h1>{menu.name}</h1>
                     </Link>
                   )}
@@ -52,7 +50,7 @@ const Navbar = () => {
           </div>
 
           {/* Buttons */}
-          <div className="hidden gap-4 lg:flex flex-shrink-0">
+          <div className="hidden flex-shrink-0 gap-4 lg:flex">
             <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
               Log in
             </Button>
@@ -62,13 +60,13 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden flex-shrink-0">
+          {/* Hamburger Menu Button */}
+          <div className="flex-shrink-0 lg:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? (
-                <IoIosClose className="text-3xl text-gray-700 dark:text-gray-300" />
+                <IoIosClose className="text-3xl text-gray-300 " />
               ) : (
-                <IoIosMenu className="text-3xl text-gray-700 dark:text-gray-300" />
+                <IoIosMenu className="text-3xl text-gray-300 " />
               )}
             </button>
           </div>
@@ -80,10 +78,10 @@ const Navbar = () => {
             {navMenu.map((menu) => (
               <div key={menu.id} className="mb-2">
                 {menu.subRoute ? (
-                  <Dropdown navItem={menu} />
+                  <DropdownSm navItem={menu} />
                 ) : (
                   <Link
-                    className="block py-2 text-slate-500 duration-300 hover:text-primary"
+                    className="block py-2 text-slate-400 duration-300 hover:text-primary"
                     to={menu.link}
                     onClick={() => setIsMenuOpen(false)}
                   >
