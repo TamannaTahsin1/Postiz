@@ -5,6 +5,7 @@ import Container from "../Container/Container";
 import logo from "../../../assets/Logo/logo.png";
 import { useState } from "react";
 import { IoIosClose, IoIosMenu } from "react-icons/io";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navMenu = [
@@ -22,24 +23,24 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 bg-black text-primary shadow-sm transition-colors duration-300 ">
       <Container>
-        <div className="mx-auto flex  items-center gap-6 py-6 xl:gap-10">
+        <div className="mx-auto flex items-center justify-between py-6">
           {/* Logo */}
-          <div>
+          <div className="flex-shrink-0">
             <Link to="/">
-              <img loading="lazy" src={logo} className="" alt="Logo" />
+              <img loading="lazy" src={logo} className="h-8" alt="Logo" />
             </Link>
           </div>
 
-          <div className="flex flex-1 items-center gap-8">
-            {/* Menu for large devices */}
-            <div className="hidden items-center gap-10 lg:flex ">
+          {/* Menu for large devices */}
+          <div className="hidden flex-1 justify-center items-center lg:flex">
+            <div className="flex items-center gap-10">
               {navMenu.map((menu) => (
                 <div key={menu.id}>
                   {menu.subRoute ? (
                     <Dropdown navItem={menu} />
                   ) : (
                     <Link
-                      className=" text-primary duration-300 "
+                      className="text-primary duration-300"
                       to={menu.link}
                     >
                       <h1>{menu.name}</h1>
@@ -50,19 +51,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden ">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? (
-                <IoIosClose className="text-3xl text-gray-700 dark:text-gray-300" />
-              ) : (
-                <IoIosMenu className="text-3xl text-gray-700 dark:text-gray-300" />
-              )}
-            </button>
-          </div>
-
           {/* Buttons */}
-          <div className="hidden gap-4 lg:flex">
+          <div className="hidden gap-4 lg:flex flex-shrink-0">
             <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
               Log in
             </Button>
@@ -70,6 +60,17 @@ const Navbar = () => {
             <Button className="w-full rounded-full  ">
               {`Get Started >>`}
             </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden flex-shrink-0">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? (
+                <IoIosClose className="text-3xl text-gray-700 dark:text-gray-300" />
+              ) : (
+                <IoIosMenu className="text-3xl text-gray-700 dark:text-gray-300" />
+              )}
+            </button>
           </div>
         </div>
 
