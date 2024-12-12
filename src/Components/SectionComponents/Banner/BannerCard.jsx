@@ -1,6 +1,11 @@
 import bannerImage from "../../../assets/banner/bannerImg.png";
 import Button from "../../SharedComponents/Button/Button";
 import circle from "../../../assets/banner/circle.svg";
+import tiktok from "../../../assets/banner/tiktok.svg";
+import insta from "../../../assets/banner/insta.svg";
+import blur from "../../../assets/banner/blurIcon.svg";
+import youtube from "../../../assets/banner/youtube.svg";
+
 const BannerCard = () => {
   return (
     <div className="relative  flex-col items-center justify-between rounded-2xl bg-gradient-to-r from-[#7c3aed] via-[#37CEFF] to-[#ec4899] p-5 md:flex md:flex-row md:p-10 lg:h-[380px]">
@@ -22,12 +27,21 @@ const BannerCard = () => {
           {`Get Started >>`}
         </Button>
       </div>
-      <div className="hidden md:block">
-        <img
-          src={bannerImage}
-          alt=""
-          className="absolute bottom-0 right-0 w-[420px]"
-        />
+      <div className="hidden  lg:block">
+        <div>
+          {" "}
+          <img
+            src={bannerImage}
+            alt=""
+            className="absolute bottom-0 right-0 w-[420px]"
+          />
+        </div>
+        <div>
+          <img src={tiktok} alt="" className="absolute bottom-9 left-[60%]" />
+          <img src={insta} alt="" className="absolute right-[20%] top-28" />
+          <img src={blur} alt="" className="absolute bottom-0 left-[40%]" />
+          <img src={youtube} alt="" className="absolute right-[10%] top-0" />
+        </div>
       </div>
     </div>
   );
