@@ -12,8 +12,7 @@ const Navbar = () => {
     {
       id: 2,
       name: "Providers",
-      link: "/courses",
-      subRoute: ["All Courses", "Spoken English", "Data Entry"],
+      subRoute: ["Hootsuite", "Buffer", "Sprout Social"],
     },
     { id: 3, name: "Blog" },
     { id: 4, name: "Pricing" },
