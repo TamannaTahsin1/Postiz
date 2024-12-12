@@ -1,160 +1,97 @@
 import { MdOutlineDone } from "react-icons/md";
-import { IoCloseOutline } from "react-icons/io5";
 
 export const PostizInboxData = [
-  {
-    title: "Social networks for auto-publishing",
-    postizData: [
-      {
-        subTitle: "Instagram",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Facebook",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Twitter",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "LinkedIn",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "GoogleMyBusiness",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "TikTok",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Pinterest",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Youtube",
-        icon: <IoCloseOutline className="text-red-600" />,
-      },
-    ],
-  },
   {
     title: "Essentials",
     postizData: [
       {
-        subTitle: "Notes",
+        subTitle: "Add Labels to Messages",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Video Publishing",
+        subTitle: "Assign Users to Messages",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Save as Draft",
+        subTitle: "Create Custom Automations",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Drag & Drop Calendar",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Post Previews",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Saved Captions Lists",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Best Time to Post",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Import Holidays",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Instagram Grid Planner",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Image Cropping",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Shareable Calendar URL",
+        subTitle: "Bulk Actions",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Tag users on",
+    title: "Instagram",
     postizData: [
       {
-        subTitle: "Instagram",
+        subTitle: "Reply to dm",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Facebook",
+        subTitle: "Reply to comment",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Linkedin  ",
+        subTitle: "Reply to storyMention",
+        icon: <MdOutlineDone className="text-green-600" />,
+      },
+      {
+        subTitle: "Reply to storyReply",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Auto-publish carousels on",
+    title: "Facebook",
     postizData: [
       {
-        subTitle: "Instagram",
+        subTitle: "Reply to comment",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Facebook",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Linkedin  ",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Twitter  ",
+        subTitle: "Reply to dm",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Scheduling views supported",
+    title: "Twitter",
     postizData: [
       {
-        subTitle: "Week",
+        subTitle: "Reply to mention",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Month",
+        subTitle: "Reply to dm",
         icon: <MdOutlineDone className="text-green-600" />,
       },
+    ],
+  },
+  {
+    title: "Linkedin",
+    postizData: [
       {
-        subTitle: "List",
+        subTitle: "Reply to comment",
         icon: <MdOutlineDone className="text-green-600" />,
       },
+    ],
+  },
+  {
+    title: "Google My Business",
+    postizData: [
       {
-        subTitle: "Day  ",
-        icon: <IoCloseOutline className="text-red-600" />,
-      },
-      {
-        subTitle: "Grid",
+        subTitle: "Reply to review",
         icon: <MdOutlineDone className="text-green-600" />,
       },
+    ],
+  },
+  {
+    title: "TikTok",
+    postizData: [
       {
-        subTitle: "Board",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Table",
+        subTitle: "Reply to comment",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],

@@ -3,158 +3,146 @@ import { IoCloseOutline } from "react-icons/io5";
 
 export const PostizAnalyticsData = [
   {
-    title: "Social networks for auto-publishing",
+    title: "Instagram",
     postizData: [
       {
-        subTitle: "Instagram",
+        subTitle: "Followers",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Facebook",
+        subTitle: "Likes",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Twitter",
+        subTitle: "Comments",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "LinkedIn",
+        subTitle: "EngagementRate",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "GoogleMyBusiness",
+        subTitle: "Posts",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "TikTok",
+        subTitle: "Stories",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Pinterest",
+        subTitle: "Reels",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Youtube",
-        icon: <IoCloseOutline className="text-red-600" />,
+        subTitle: "Competitors",
+        icon: <IoCloseOutline className="text-green-600" />,
+      },
+      {
+        subTitle: "Locations",
+        icon: <IoCloseOutline className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Essentials",
+    title: "Facebook",
     postizData: [
       {
-        subTitle: "Notes",
+        subTitle: "Follows",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Video Publishing",
+        subTitle: "Fans",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Save as Draft",
+        subTitle: "Impressions",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Drag & Drop Calendar",
+        subTitle: "Views",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Post Previews",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Saved Captions Lists",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Best Time to Post",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Import Holidays",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Instagram Grid Planner",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Image Cropping",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Shareable Calendar URL",
+        subTitle: "Posts",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Tag users on",
+    title: "Twitter",
     postizData: [
       {
-        subTitle: "Instagram",
+        subTitle: "Likes",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Facebook",
+        subTitle: "Replies",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Linkedin  ",
+        subTitle: "Mentions  ",
+        icon: <MdOutlineDone className="text-green-600" />,
+      },
+      {
+        subTitle: "Retweets",
+        icon: <MdOutlineDone className="text-green-600" />,
+      },
+      {
+        subTitle: "Tweets",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Auto-publish carousels on",
+    title: "Linkedin",
     postizData: [
       {
-        subTitle: "Instagram",
+        subTitle: "Views",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Facebook",
+        subTitle: "Visitors",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Linkedin  ",
+        subTitle: "Demographics",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Twitter  ",
+        subTitle: "Updates",
+        icon: <MdOutlineDone className="text-green-600" />,
+      },
+      {
+        subTitle: "Shares",
+        icon: <MdOutlineDone className="text-green-600" />,
+      },
+      {
+        subTitle: "Followers",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
   },
   {
-    title: "Scheduling views supported",
+    title: "Reporting",
     postizData: [
       {
-        subTitle: "Week",
+        subTitle: "ExportPDF",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Month",
+        subTitle: "CustomColors",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "List",
+        subTitle: "CustomTimeframe",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Day  ",
-        icon: <IoCloseOutline className="text-red-600" />,
-      },
-      {
-        subTitle: "Grid",
+        subTitle: "Customizeable  ",
         icon: <MdOutlineDone className="text-green-600" />,
       },
       {
-        subTitle: "Board",
-        icon: <MdOutlineDone className="text-green-600" />,
-      },
-      {
-        subTitle: "Table",
+        subTitle: "ShareableURL",
         icon: <MdOutlineDone className="text-green-600" />,
       },
     ],
