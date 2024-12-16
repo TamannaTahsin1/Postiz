@@ -17,23 +17,25 @@ const Banner = () => {
       </div>
       <Container>
         <div className=" space-y-5 py-5 text-center lg:p-20">
-          <div className="space-y-2">
-            <h1 className="mx-auto text-balance text-3xl font-bold lg:max-w-[800px] lg:text-6xl">
+          <div className=" space-y-2">
+            <h1 className="mx-auto max-w-[300px] text-3xl font-bold lg:max-w-[800px] lg:text-6xl">
               Postiz and Buffer comparison
             </h1>
-            <img
-              src={line}
-              className="mx-auto w-[200px] lg:flex lg:justify-end"
-              alt=""
-            />
+            <div className="pb-5">
+              <img
+                src={line}
+                className="absolute right-12 w-[170px] md:w-[300px] lg:right-[28%] xl:right-[39%]"
+                alt=""
+              />
+            </div>
             <p className="mx-auto text-balance text-xs md:text-sm lg:max-w-lg">{`Postiz's superior scheduling flow, competitor tracking, and client management make it the best Buffer alternative.`}</p>
           </div>
-          <div className="mt-4 flex flex-col items-center justify-center gap-2">
+          <div className="mt-4 flex flex-col items-center justify-center ">
             <Button className="rounded-full border-[1px] border-gray-300 bg-white md:w-[20%] ">
               {`Get Started >>`}
             </Button>
           </div>
-          <div className="pt-8 lg:pt-16">
+          <div className="pt-8 lg:pt-20">
             <BannerCard />
           </div>
         </div>

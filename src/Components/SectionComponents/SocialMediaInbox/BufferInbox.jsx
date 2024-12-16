@@ -2,8 +2,8 @@ import { BufferInboxData } from "../../../lib/Data/BufferInboxData";
 
 const BufferInbox = () => {
   return (
-    <div className="w-full space-y-6 rounded-xl bg-secondary p-7 md:p-14">
-      <h1 className="text-lg font-medium md:text-2xl md:font-bold">
+    <div className="w-full space-y-6 rounded-xl bg-secondary p-7 lg:p-10">
+      <h1 className="text-lg font-medium lg:text-2xl md:font-bold">
         Buffer - Social Media Inbox
       </h1>
       <div>

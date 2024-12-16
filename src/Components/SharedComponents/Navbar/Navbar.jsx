@@ -51,7 +51,7 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div className="hidden flex-shrink-0 gap-4 lg:flex">
-            <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
+            <Button className="min-w-[120px] rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
               Log in
             </Button>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
               </div>
             ))}
             <div className="mt-4 flex flex-col gap-2">
-              <Button className="rounded-full border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
+              <Button className="rounded-full  border-primary bg-transparent text-white hover:border-primary hover:bg-primary hover:text-black ">
                 Log in
               </Button>
 

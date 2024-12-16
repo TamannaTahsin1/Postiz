@@ -2,8 +2,10 @@ import { PostizInboxData } from "../../../lib/Data/PostizInboxData";
 
 const PostizInbox = () => {
   return (
-    <div className="w-full space-y-6 rounded-xl bg-secondary p-7 md:p-14">
-      <h1 className="text-lg md:text-2xl font-medium md:font-bold">Postiz -Social Media Inbox</h1>
+    <div className="w-full space-y-6 rounded-xl bg-secondary p-7 lg:p-10">
+      <h1 className="text-lg font-medium md:font-bold lg:text-2xl">
+        Postiz -Social Media Inbox
+      </h1>
       <div>
         {PostizInboxData.map((item, idx) => (
           <div key={idx} className="mb-4">

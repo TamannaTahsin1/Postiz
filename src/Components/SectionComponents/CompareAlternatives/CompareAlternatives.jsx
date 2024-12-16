@@ -41,9 +41,9 @@ const CompareAlternatives = () => {
           {data.map((item, idx) => (
             <div
               key={idx}
-              className="w-full space-y-5 rounded-xl bg-secondary p-7 md:p-14 "
+              className="w-full space-y-5 rounded-xl bg-secondary p-7 lg:p-10 "
             >
-              <h1 className="text-lg font-medium md:text-2xl md:font-bold">
+              <h1 className="text-lg font-medium lg:text-2xl lg:font-bold">
                 {item.title}
               </h1>
               <div className="space-y-2">
@@ -52,7 +52,7 @@ const CompareAlternatives = () => {
                     key={dataIdx}
                     className="flex items-center gap-2 text-gray-200"
                   >
-                    <p className="text-sm md:text-base">{comparison}</p>
+                    <p className="text-sm lg:text-base">{comparison}</p>
                   </div>
                 ))}
               </div>

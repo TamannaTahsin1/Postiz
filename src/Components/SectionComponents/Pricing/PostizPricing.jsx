@@ -7,7 +7,7 @@ import {
 
 const PostizPricing = () => {
   return (
-    <div className="w-full space-y-6 rounded-xl bg-secondary p-10 md:p-7 lg:p-14">
+    <div className="w-full space-y-6 rounded-xl bg-secondary md:h-[1100px] lg:h-[1000px] p-10 md:p-7 lg:p-10">
       <h1 className="mb-8 text-lg font-semibold md:text-2xl md:font-bold">
         Postiz Pricing
       </h1>
@@ -34,9 +34,9 @@ const PostizPricing = () => {
           >
             <div className="space-y-2">
               <h1 className="text-sm md:text-lg">{item.package}</h1>
-              <h2 className="text-2xl md:text-3xl font-medium md:font-semibold">
+              <h2 className="text-2xl font-medium md:text-3xl md:font-semibold">
                 ${item.price}
-                <span className="-mt-5 text-base font-normal ml-2">/ mo</span>
+                <span className="-mt-5 ml-2 text-base font-normal">/ mo</span>
               </h2>
             </div>
             <div className=" space-y-1 text-balance text-sm text-gray-300 md:w-[32%]">
@@ -53,7 +53,7 @@ const PostizPricing = () => {
           {services.map((item) => (
             <div
               key={item.package}
-              className={`flex flex-col gap-3 items-start justify-start rounded-xl p-5 md:flex-row md:items-center md:justify-between ${
+              className={`flex flex-col items-start justify-start gap-3 rounded-xl p-5 md:flex-row md:items-center md:justify-between ${
                 item.package === "Self service installation"
                   ? "bg-gradient-to-r from-[#45007C] to-[#280033]"
                   : item.package === "Enterprise"
@@ -63,9 +63,9 @@ const PostizPricing = () => {
             >
               <div className="space-y-2">
                 <h1 className="text-sm md:text-lg">{item.package}</h1>
-                <h2 className="text-2xl md:text-3xl font-medium md:font-semibold">
+                <h2 className="text-2xl font-medium md:text-3xl md:font-semibold">
                   {item.price}
-                  <span className="-mt-5 text-base font-normal ml-2">/ mo</span>
+                  <span className="-mt-5 ml-2 text-base font-normal">/ mo</span>
                 </h2>
               </div>
               <div className="space-y-1 text-balance text-sm text-gray-300 md:w-[32%]">

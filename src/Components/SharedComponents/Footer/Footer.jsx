@@ -8,15 +8,15 @@ const Footer = () => {
   return (
     <Container>
       <div className="relative z-20 bg-black px-10 pt-14">
-        <div className=" grid  gap-3 space-y-8 text-center md:grid-cols-2 md:text-start lg:grid-cols-4">
-          <div className="space-y-4 md:pt-7">
-            <div className="ml-20 block md:mx-0">
-              <img src={logo} className="mx-auto block md:mx-0" alt="" />
+        <div className=" grid  gap-3 space-y-8 text-center lg:text-start lg:grid-cols-4">
+          <div className="space-y-4 lg:pt-7">
+            <div className="ml-20 block lg:mx-0">
+              <img src={logo} className="mx-auto block lg:mx-0" alt="" />
             </div>
             <p className="text-sm text-gray-400">
               Open-source social media scheduling tool
             </p>
-            <div className="hidden justify-start gap-3 md:flex">
+            <div className="hidden justify-start gap-3 lg:flex">
               <FaGithub className="size-8 rounded-full bg-[#3E3E3E] p-2" />
               <FaDiscord className="size-8 rounded-full bg-[#3E3E3E] p-2" />
               <FaLinkedinIn className="size-8 rounded-full bg-[#3E3E3E] p-2" />
@@ -55,13 +55,13 @@ const Footer = () => {
           <hr className="border-[#1b1b1b]" />
         </div>
         <div className="space-y-4">
-          <div className="flex justify-center gap-3 md:hidden">
+          <div className="flex justify-center gap-3 lg:hidden">
             <FaGithub className="size-8 rounded-full bg-[#3E3E3E] p-2" />
             <FaDiscord className="size-8 rounded-full bg-[#3E3E3E] p-2" />
             <FaLinkedinIn className="size-8 rounded-full bg-[#3E3E3E] p-2" />
             <FaXTwitter className="size-8 rounded-full bg-[#3E3E3E] p-2" />
           </div>
-          <div className="flex flex-col-reverse gap-2 pb-6 text-center text-sm text-gray-300 md:flex-row md:justify-start md:gap-10">
+          <div className="flex flex-col-reverse gap-2 pb-6 text-center text-sm text-gray-300 lg:flex-row lg:justify-start lg:gap-10">
             <p>© Postiz, 2024. All rights reserved.</p>
             <p className="flex items-center justify-center gap-2">
               Designed by

@@ -2,8 +2,8 @@ import { PostizAnalyticsData } from "../../../lib/Data/PostizAnalyticsData";
 
 const PostizAnalytics = () => {
   return (
-    <div className="bg-secondary w-full space-y-6 rounded-xl p-7 md:p-14">
-      <h1 className="text-lg md:text-2xl font-medium md:font-bold">Postiz - Analytics & Reporting</h1>
+    <div className="bg-secondary w-full space-y-6 rounded-xl p-7 lg:p-10">
+      <h1 className="text-lg lg:text-2xl font-medium md:font-bold">Postiz - Analytics & Reporting</h1>
       <div>
         {PostizAnalyticsData.map((item, idx) => (
           <div key={idx} className="mb-4">

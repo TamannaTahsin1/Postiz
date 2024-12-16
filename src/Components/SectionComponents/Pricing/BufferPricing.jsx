@@ -3,7 +3,7 @@ import { priceDetails, pricing } from "../../../lib/Data/BufferPricingData";
 
 const BufferPricing = () => {
   return (
-    <div className="w-full  space-y-3 rounded-xl bg-secondary p-10 md:p-7 lg:p-14 ">
+    <div className="w-full  space-y-3  rounded-xl md:h-[1100px] lg:h-[1000px]  bg-secondary p-10 md:p-7 lg:p-10 ">
       <h1 className="mb-8 text-2xl font-bold">Buffer Pricing</h1>
       {/* pricing features */}
       <div className="space-y-3 ">

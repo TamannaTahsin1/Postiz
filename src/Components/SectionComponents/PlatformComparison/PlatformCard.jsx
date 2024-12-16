@@ -42,7 +42,7 @@ const PlatformCard = () => {
             </p>
           </div>
         ))}
-        <div className="absolute left-1/2 top-[48%] flex size-10 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-xl bg-black font-bold shadow-lg md:top-1/2">
+        <div className="absolute left-1/2 top-[46%] lg:top-1/2 flex size-10 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-xl bg-black font-bold shadow-lg md:top-1/2">
           VS
         </div>
       </div>

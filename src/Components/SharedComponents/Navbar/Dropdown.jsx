@@ -43,17 +43,17 @@ const Dropdown = ({ navItem }) => {
       </div>
 
       <div
-        className={`absolute left-1/2 top-full -mt-2 h-60  w-full max-w-[250px] -translate-x-1/2 transform overflow-y-auto rounded-lg bg-secondary shadow-md transition-all duration-300 ${
+        className={`absolute left-1/2 top-full -mt-2  cursor-pointer w-full max-w-[250px] -translate-x-1/2 transform overflow-y-auto rounded-lg bg-secondary shadow-md transition-all duration-300 ${
           isOpen
             ? "visible scale-100 opacity-100"
             : "invisible scale-95 opacity-0"
-        } md:left-0 md:top-[80px] md:w-max md:max-w-[250px] md:translate-x-0`}
+        } md:left-0 md:top-11 md:w-max md:max-w-[250px] md:translate-x-0`}
       >
         {navItem?.subRoute?.map((service, idx) => (
           <div
             onClick={() => setIsOpen(false)}
             key={idx}
-            className="flex h-[60px] items-center px-4 font-medium text-white  duration-300 hover:bg-primary/10 hover:text-black"
+            className="flex h-[60px] items-center px-4 font-medium text-white  duration-300 hover:bg-primary/10 hover:text-white"
           >
             <h1 className="text-sm">{service}</h1>
           </div>
